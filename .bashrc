@@ -11,7 +11,7 @@ export EDITOR='/usr/bin/nvim'
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias nv='nvim'
-alias ll='ls -lah'
+alias ll='ls -laht --color=auto'
 alias desligar='shutdown now'
 alias suspender='systemctl suspend'
 alias pw='$PW'
@@ -33,13 +33,13 @@ export PW='/home/cris/Documentos/pywal/muda_cor.sh'
 # &   # Run the process in the background.
 # ( ) # Hide shell job control messages.
 # Not supported in the "fish" shell.
-(cat ~/.cache/wal/sequences &)
+# (cat ~/.cache/wal/sequences &)
 
 # Alternative (blocks terminal for 0-3ms)
-cat ~/.cache/wal/sequences
+# cat ~/.cache/wal/sequences
 
 # To add support for TTYs this line can be optionally added.
-source ~/.cache/wal/colors-tty.sh
-. "$HOME/.cargo/env"
-
-[ -f "/home/cris/.ghcup/env" ] && . "/home/cris/.ghcup/env" # ghcup-env
+# source ~/.cache/wal/colors-tty.sh
+# . "$HOME/.cargo/env"
+#
+# [ -f "/home/cris/.ghcup/env" ] && . "/home/cris/.ghcup/env" # ghcup-env
