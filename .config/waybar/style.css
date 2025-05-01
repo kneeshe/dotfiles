@@ -9,7 +9,7 @@
 window#waybar {
     /*background-color: rgba(43, 48, 59, 0.4);
     background-color: #BA9BCF;*/
-    border-radius: 14px;
+    border-radius: 2px;
     background-color: @background;
     /*border-bottom: 2px solid rgba(100, 114, 125, 0.5); */
     color: #69386B;
@@ -62,7 +62,7 @@ button:hover {
     padding: 0 5px;
     background-color: transparent;
     color: #ffffff;
-    border-radius: 14px;
+    border-radius: 2px;
     margin: 4px;
 }
 
