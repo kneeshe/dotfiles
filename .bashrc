@@ -18,6 +18,7 @@ alias pw='$PW'
 alias dormir='systemctl suspend'
 alias comprun='gcc *.c && ./*.out'
 alias kitimg='kitten icat'
+alias gpp="g++"
 
 PS1='[\u@\h \W]\$ '
 
