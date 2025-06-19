@@ -25,6 +25,12 @@ vim.keymap.set("n", "<leader>h", ":noh<cr>")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { silent = true })
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { silent = true })
 
+-- Navigate vim panes better 
+vim.keymap.set('n', '<C-h>', ':wincmd h<CR>' ) -- vai para a janela a esquerda
+vim.keymap.set('n', '<C-j>', ':wincmd j<CR>' ) -- vai para a janela a abaixo
+vim.keymap.set('n', '<C-k>', ':wincmd k<CR>' ) -- vai para a janela a acima
+vim.keymap.set('n', '<C-l>', ':wincmd l<CR>' ) -- vai para a janela a direita
+
 -- PLUGINS KEYMAPS --
 -- Nvimtree
 vim.keymap.set("n", "<leader>e", ":NvimTreeFindFileToggle<cr>")
@@ -38,11 +44,11 @@ vim.keymap.set("n", "<leader>fb", ":Telescope buffers<cr>")
 -- Commenttoggle
 vim.keymap.set({"n", "v"}, "<C-k>", ":CommentToggle<cr>") -- ativa o comentario
 
--- Toggleterm
-vim.keymap.set('n', '<C-t>', ':ToggleTerm size=10 direction=horizontal name=term<cr>') -- ativa o terminal
-vim.keymap.set('t', '<esc>', [[<C-\><C-n>]], opts) -- sai do modo de inserção do terminal
-vim.keymap.set('t', '<C-h>', [[<Cmd>wincmd h<CR>]], opts) -- vai para a janela a esquerda
-vim.keymap.set('t', '<C-j>', [[<Cmd>wincmd j<CR>]], opts) -- vai para a janela abaixo
-vim.keymap.set('t', '<C-k>', [[<Cmd>wincmd k<CR>]], opts) -- vai para a janela acima
-vim.keymap.set('t', '<C-l>', [[<Cmd>wincmd l<CR>]], opts) -- vai para a janela a direita
-vim.keymap.set('t', '<C-w>', [[<C-\><C-n><C-w>]], opts) -- na teoria, fecha o modo terminal e muda a janela
+-- Vim-tmux-navigator
+vim.keymap.set("n", "<C-h>", ":TmuxNavigateLeft<cr>")
+vim.keymap.set("n", "<C-j>", ":TmuxNavigateDown<cr>")
+vim.keymap.set("n", "<C-k>", ":TmuxNavigateUp<cr>")
+vim.keymap.set("n", "<C-l>", ":TmuxNavigateRight<cr>")
+ 
+
+
