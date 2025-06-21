@@ -3,15 +3,17 @@
 
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    /*font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;*/
-    font-family: FontAwesome, Roboto, Helvetica, Arial, JetBrains Mono, sans-serif;
+    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     font-size: 14px;
 }
 
 window#waybar {
+    /*background-color: rgba(43, 48, 59, 0.4);
+    background-color: #BA9BCF;*/
     border-radius: 2px;
-    /*background-color: transparent;*/
-    color: @surface0;
+    background-color: @background;
+    /*border-bottom: 2px solid rgba(100, 114, 125, 0.5); */
+    color: #69386B;
     transition-property: background-color;
     transition-duration: .5s;
     font-weight: bold;
@@ -21,15 +23,26 @@ window#waybar.hidden {
     opacity: 0.2;
 }
 
+/*
 window#waybar.empty {
-    background-color: @lavender;
+    background-color: transparent;
 }
 window#waybar.solo {
-    background-color: @lavender;
+    background-color: #FFFFFF;
+}
+*/
+
+window#waybar.termite {
+    background-color: #3F3F3F;
+}
+
+window#waybar.chromium {
+    background-color: #000000;
+    border: none;
 }
 
 button {
-    /* Use box-shadow instead of border so the surface0 isn't offset */
+    /* Use box-shadow instead of border so the text isn't offset */
     /*box-shadow: inset 0 3px transparent;*/
     /* Avoid rounded borders under each button name */
     border: none;
@@ -37,7 +50,7 @@ button {
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
-    /*background: inherit;*/
+    background: inherit;
     /*box-shadow: inset 0 -3px #ffffff;*/
 }
 
@@ -48,24 +61,26 @@ button:hover {
 
 #workspaces button {
     padding: 0 5px;
-    background-color: @flamingo;
-    color: @surface0;
+    background-color: transparent;
+    color: #ffffff;
     border-radius: 2px;
     margin: 4px;
 }
 
 #workspaces button:hover {
-    background: @rosewater;
+    /*background: rgba(0, 0, 0, 0.2); */
+    /*background: #CCB6E8;*/
+    background: @color2;
 }
 
 #workspaces button.active {
     /*background-color: #6E396C;*/
-    background-color: @pink;
+    background-color: @color1;
 /*    box-shadow: inset 0 -3px #ffffff;*/
 }
 
 #workspaces button.urgent {
-    background-color: @red;
+    background-color: #eb4d4b;
 }
 
 #mode {
@@ -91,7 +106,7 @@ button:hover {
 #power-profiles-daemon,
 #mpd {
     padding: 0 10px;
-    color: @surface0;
+    color: @foreground;
     font-weight: bold;
     margin: 1px;
 }
@@ -99,7 +114,7 @@ button:hover {
 #window,
 #workspaces {
     margin: 0 4px;
-    color: @red;
+    color: @foreground;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -113,8 +128,8 @@ button:hover {
 }
 
 #clock {
-    background-color: @lavender;
-    border-radius: 4px;
+    /*background-color: #64727D;*/
+    /*background-color: #69386B;*/
 }
 
 #battery {
@@ -169,14 +184,14 @@ label:focus {
 }
 
 #cpu {
-    background-color: @yellow;
+    /*background-color: #2ecc71;*/
+    /*background-color: #69386B;*/
     font-weight: bold;
-    border-radius: 4px;
 }
 
 #memory {
-    background-color: @mauve;
-    border-radius: 4px;
+    /*background-color: #9b59b6;*/
+    /*background-color: #69386B;*/
 }
 
 #disk {
@@ -188,25 +203,25 @@ label:focus {
 }
 
 #network {
-    background-color: @green;
-    color: @surface0;
-    border-radius: 4px;
+    /*background-color: #2980b9;*/
+    /*background-color: #69386B;*/
+    color: @foreground;
 }
 
 #network.disconnected {
-    background-color: @red;
+    background-color: #f53c3c;
 }
 
 #pulseaudio {
-    background-color: @blue;
-    color: @surface0;
+    /*background-color: #f1c40f;*/
+    /*background-color: #69386B;*/
+    color: @foreground;
     font-weight: bold;
-    border-radius: 4px;
 }
 
 #pulseaudio.muted {
     background-color: #90b1b1;
-    color: @red;
+    color: #2a5c45;
 }
 
 #wireplumber {
@@ -215,7 +230,7 @@ label:focus {
 }
 
 #wireplumber.muted {
-    background-color: @red;
+    background-color: #f53c3c;
 }
 
 #custom-media {
@@ -233,12 +248,12 @@ label:focus {
 }
 
 #temperature {
-    background-color: @flamingo;
-    border-radius: 4px;
+    /*background-color: #f0932b;*/
+    /*background-color: #69386B;*/
 }
 
 #temperature.critical {
-    background-color: @red;
+    background-color: #eb4d4b;
 }
 
 #tray {
