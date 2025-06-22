@@ -106,6 +106,7 @@ alias ll="ls -laht --color=auto"
 alias nv="nvim"
 alias desligar="shutdown now"
 alias suspender="systemctl suspend"
+alias kitimg="kitten icat"
 
 #Bindkeys (modes emacs, vi insert, vi command)
 bindkey -e
