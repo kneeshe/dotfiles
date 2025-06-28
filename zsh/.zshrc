@@ -104,9 +104,17 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ll="ls -laht --color=auto"
 alias nv="nvim"
+alias nf='nvim $(fzf --preview="bat --color=always {}")'
 alias desligar="shutdown now"
 alias suspender="systemctl suspend"
 alias kitimg="kitten icat"
+alias fzf="fzf --preview='bat --color=always {}'"
+
+#alias temporario para a vm do plex
+alias init_vm="vboxmanage startvm plex_ubu --type headless"
+alias conn_vm="ssh cristian@192.168.3.50"
+
+EDITOR='nvim'
 
 #Bindkeys (modes emacs, vi insert, vi command)
 bindkey -e
@@ -127,5 +135,8 @@ setopt hist_ignore_all_dups
 setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups 
+
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
 
 # eval "$(starship init zsh)"

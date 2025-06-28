@@ -42,7 +42,7 @@ vim.keymap.set("n", "<leader>fo", ":Telescope oldfiles<cr>")
 vim.keymap.set("n", "<leader>fb", ":Telescope buffers<cr>")
 
 -- Commenttoggle
-vim.keymap.set({"n", "v"}, "<C-k>", ":CommentToggle<cr>") -- ativa o comentario
+vim.keymap.set({"n", "v"}, "<leader>k", ":CommentToggle<cr>") -- ativa o comentario
 
 -- Vim-tmux-navigator
 vim.keymap.set("n", "<C-h>", ":TmuxNavigateLeft<cr>")
