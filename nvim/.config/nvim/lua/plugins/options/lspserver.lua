@@ -13,4 +13,5 @@
   require('lspconfig').clangd.setup {
     capabilities = capabilities
   }
+  require('lspconfig').jdtls.setup {}
 

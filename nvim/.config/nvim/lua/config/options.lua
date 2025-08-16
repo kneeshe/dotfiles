@@ -56,12 +56,12 @@ vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
 
 -- This should make your Vim / Neovim background transparent
-vim.cmd [[
-  highlight Normal guibg=none
-  highlight NonText guibg=none
-  highlight Normal ctermbg=none
-  highlight NonText ctermbg=none
-]]
+-- vim.cmd [[
+--   highlight Normal guibg=none
+--   highlight NonText guibg=none
+--   highlight Normal ctermbg=none
+--   highlight NonText ctermbg=none
+-- ]]
 
 -- Enable highlight on the actual line
 vim.opt.cursorline = true

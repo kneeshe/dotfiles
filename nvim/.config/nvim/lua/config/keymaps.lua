@@ -50,5 +50,14 @@ vim.keymap.set("n", "<C-j>", ":TmuxNavigateDown<cr>")
 vim.keymap.set("n", "<C-k>", ":TmuxNavigateUp<cr>")
 vim.keymap.set("n", "<C-l>", ":TmuxNavigateRight<cr>")
  
+-- Sugestões do Claude
+-- LSP Keymaps 
+vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Próximo diagnóstico' })
+vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Diagnóstico anterior' })
+vim.keymap.set('n', 'gl', vim.diagnostic.open_float, { desc = 'Mostrar diagnóstico' })
+vim.keymap.set('n', '<leader>d', vim.diagnostic.setloclist, { desc = 'Lista de diagnósticos' })
 
-
+-- Navegação de código
+vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { desc = 'Ir para definição' })
+vim.keymap.set('n', 'gr', vim.lsp.buf.references, { desc = 'Mostrar referências' })
+vim.keymap.set('n', 'K', vim.lsp.buf.hover, { desc = 'Hover info' })
