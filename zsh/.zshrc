@@ -111,8 +111,8 @@ alias kitimg="kitten icat"
 alias fzf="fzf --preview='bat --color=always {}'"
 
 #alias temporario para a vm do plex
-alias init_vm="vboxmanage startvm plex_ubu --type headless"
-alias conn_vm="ssh cristian@192.168.3.50"
+alias init_vm="vboxmanage startvm ubuntu_plex --type headless"
+alias conn_vm="ssh cristian@192.168.3.63"
 
 EDITOR='nvim'
 
