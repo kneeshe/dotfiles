@@ -109,10 +109,16 @@ alias desligar="shutdown now"
 alias suspender="systemctl suspend"
 alias kitimg="kitten icat"
 alias fzf="fzf --preview='bat --color=always {}'"
+alias ssh="kitten ssh"
 
 #alias temporario para a vm do plex
 alias init_vm="vboxmanage startvm ubuntu_plex --type headless"
 alias conn_vm="ssh cristian@192.168.3.63"
+
+#alias para a vpn
+alias vpn-start='openvpn3 session-start --config "vpn-cvx"'
+alias vpn-stop='openvpn3 session-manage --disconnect --config "vpn-cvx"'
+alias vpn-status='openvpn3 sessions-list'
 
 EDITOR='nvim'
 

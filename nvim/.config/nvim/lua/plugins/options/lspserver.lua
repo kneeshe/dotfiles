@@ -14,4 +14,16 @@
     capabilities = capabilities
   }
   require('lspconfig').jdtls.setup {}
+  
 
+-- vim.lsp.config("pyright")
+-- vim.lsp.enable({"pyright"})
+
+-- vim.lsp.config("rust_analyzer", {capabilities = capabilities, settings = {['rust-analyzer']}})
+-- vim.lsp.enable({"rust_analyzer"})
+
+-- vim.lsp.config("clangd", {capabilities = capabilities})
+-- vim.lsp.enable({"clangd"})
+
+-- vim.lsp.config("jdtls")
+-- vim.lsp.enable({"jdtls"})
