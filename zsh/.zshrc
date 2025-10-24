@@ -116,8 +116,10 @@ alias init_vm="vboxmanage startvm ubuntu_plex --type headless"
 alias conn_vm="ssh cristian@192.168.3.63"
 
 #alias para a vpn
-alias vpn-start='openvpn3 session-start --config "cvx"'
-alias vpn-stop='openvpn3 session-manage --disconnect --config "cvx"'
+alias vpn-cvx='openvpn3 session-start --config "cvx"'
+alias vpn-qti='openvpn3 session-start --config "qti"'
+alias vpn-reweb='openvpn3 session-start --config "reweb"'
+alias vpn-stop='openvpn3 session-manage --disconnect --config'
 alias vpn-status='openvpn3 sessions-list'
 
 EDITOR='nvim'
