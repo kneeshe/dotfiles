@@ -1,8 +1,6 @@
-@import "mocha.css";
 
 * {
     font-family: "Fira Sans Semibold", "Font Awesome 6 Free", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    /* font-family: "JetBrains Mono", "Font Awesome 6 Free", FontAwesome, Roboto, Helvetica, Arial, sans-serif; */
     font-size: 11px;  /* Slightly smaller font size */
     font-weight: 600;
     margin: 0;
@@ -16,8 +14,7 @@
     border: none;
     border-radius: 2px;
     min-height: 0;
-    /* margin: 0.2em 0.3em 0.2em 0.3em; */
-    margin: 0.1em 0.2em 0.1em 0.3em;
+    margin: 0.2em 0.3em 0.2em 0.3em;
 }
 
 /* The whole bar */
@@ -34,49 +31,33 @@ window#waybar.hidden {
   opacity: 0.2;
 }
 
-.modules-center{
-  background-color: #111827;
-  border-radius: 6px;
-  padding: 3px 6px;
-}
-
-.modules-right{
-  background-color: #111827;
-  border-radius: 6px;
-  padding: 3px 6px;
-}
-
 #workspaces button {
-    padding: 3px 5px;  /* Adjusted padding to reduce height */
-    margin: 3px 5px;    /* Reduced margin slightly */
-    border-radius: 6px;
-    border: 3px solid mix(@red, @sky, 0.5);
-    color: mix(@red, @sky, 0.5);
-    background-color: transparent; 
+    padding: 1px 2px;  /* Adjusted padding to reduce height */
+    margin: 1px 2px;    /* Reduced margin slightly */
+    border-radius: 4px;
+    color: @foreground;
+    background-color: #111827;
     transition: all 0.3s ease-in-out;
-    font-size: 13px;  /* Slightly smaller font size */
+    font-size: 11px;  /* Slightly smaller font size */
 }
 
 #workspaces button.active {
-    background-color: transparent;
-    color: mix(@red, @sky, 0.7);
-    border: 3px solid mix(@red, @sky, 0.7);
+    color: @foreground;
+    background: #025939;
 }
 
 #workspaces button:hover {
-    background-color: transparent;
-    color: mix(@red, @sky, 0.6);
-    border: 3px solid mix(@red, @sky, 0.6);
+    background: #333333;
 }
 
 #workspaces button.urgent {
-    background-color: @red;
+    background-color: #eb4d4b;
 }
 
 #workspaces {
     background-color: #111827;
-    border-radius: 6px;
-    padding: 3px 6px;  /* Adjusted padding to reduce height */
+    border-radius: 2px;
+    padding: 1px 2px;  /* Adjusted padding to reduce height */
 }
 
 #window {
@@ -107,7 +88,6 @@ window#waybar.hidden {
 #bluetooth,
 #custom-hyprPicker,
 #custom-power-menu,
-#custom-rofi,
 #custom-spotify,
 #custom-weather,
 #custom-weather.severe,
@@ -120,10 +100,9 @@ window#waybar.hidden {
 #custom-weather.showyIcyDay,
 #custom-weather.snowyIcyNight,
 #custom-weather.default {
-    background-color: transparent;
-    color: mix(@maroon, @yellow, 0.9);
-    border: 3px solid mix(@maroon, @yellow, 0.9); 
-    padding: 6px;  /* Adjusted padding */
+    background-color: #111827;
+    border-radius: 3px;
+    padding: 4px;  /* Adjusted padding */
 }
 
 #custom-screenshot_t {
@@ -139,39 +118,33 @@ window#waybar.hidden {
 }
 
 #tray {
-    background-color: transparent;
-    color: darker(@blue);
-    border: 3px solid darker(@blue);
-    padding: 6px;  /* Adjusted padding */
+    background-color: #111827;
+    border-radius: 3px;
+    padding: 4px;  /* Adjusted padding */
 }
 
 #cpu {
-    background-color: transparent; 
-    color: mix(@yellow, @red, 0.5); 
-    border: 3px solid mix(@yellow, @red, 0.5);
-    padding: 6px;
+    color: #fb958b;
+    background-color: #111827;
+    padding: 4px;
 }
 
 #memory {
-    background-color: transparent;
-    border: 3px solid mix(@mauve, @blue, 0.5);
-    color: mix(@mauve, @blue, 0.5);
-    padding: 6px;
+    color: #ebcb8b;
+    background-color: #111827;
+    padding: 4px;
 }
 
 #custom-power {
-    background-color: transparent;
-    color: darker(@lavender);
-    border: 3px solid darker(@lavender);
-    padding: 6px;
+    background-color: #111827;
+    border-radius: 3px;
+    padding: 4px;
 }
 
 #custom-storage {
-    background-color: transparent;
+    background-color: #111827;
     border-radius: 3px;
-    border: 3px solid @red;
-    color: @red;
-    padding: 6px;
+    padding: 4px;
 }
 
 #custom-launcher {
@@ -209,8 +182,7 @@ window#waybar.hidden {
 }
 
 #custom-weather.default {
-    color: mix(@maroon, @yellow, 0.9);
-    border: 3px solid mix(@maroon, @yellow, 0.9);
+    color: #dbd9d8;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -224,23 +196,7 @@ window#waybar.hidden {
 }
 
 #pulseaudio {
-    /* color: #7d9bba; */
-    background-color: @blue;
-    color: shade(@text, 0.3);
-    font-weight: bold;
-    border-radius: 4px;
-}
-
-#wireplumber {
-    background-color: transparent;
-    color: @blue;
-    border: 3px solid @blue;
-}
-
-#wireplumber.muted {
-    background-color: transparent;
-    color: @red;
-    border: 3px solid @red;
+    color: #7d9bba;
 }
 
 #backlight {
@@ -248,9 +204,7 @@ window#waybar.hidden {
 }
 
 #clock {
-    background-color: transparent;
-    color: mix(@red, @blue, 0.7);
-    border: 3px solid mix(@red, @blue, 0.7);
+    color: #c8d2e0;
 }
 
 #battery {
@@ -284,7 +238,7 @@ label:focus {
 }
 
 #disk {
-    background-color: @red;
+    background-color: #964b00;
 }
 
 #bluetooth {
@@ -296,15 +250,11 @@ label:focus {
 }
 
 #network {
-    background-color: transparent; 
-    color: mix(@green, @blue, 0.4);
-    border: 3px solid mix(@green, @blue, 0.4);
+    color: #b48ead;
 }
 
 #network.disconnected {
-    color: @red;
-    background-color: transparent; 
-    border: 3px solid @red;
+    color: #f53c3c;
 }
 
 #custom-media {
@@ -322,14 +272,11 @@ label:focus {
 }
 
 #temperature {
-    background-color: transparent;
-    color: darker(@flamingo);
-    border: 3px solid darker(@flamingo);
+    color: #f0932b;
 }
 
 #temperature.critical {
-    /* color: #eb4d4b; */
-    background-color: @red;
+    color: #eb4d4b;
 }
 
 #tray > .passive {
@@ -372,4 +319,4 @@ label:focus {
 
 #keyboard-state > label.locked {
     background: rgba(0, 0, 0, 0.2);
-} 
+}

@@ -9,11 +9,11 @@
 
     //"height": 20,
 
-    "margin-left": 5,
+    "margin-left": 10,
     "margin-bottom": 0,
-    "margin-right": 5,
+    "margin-right": 10,
 
-    "spacing": 2, // Gaps between modules (4px)
+    "spacing": 3, // Gaps between modules (4px)
 
     "modules-left": [
         //"custom/rofi",
@@ -30,13 +30,12 @@
         //"custom/gammastep"
     ],
     "modules-right": [
-        //"backlight",
+        "backlight",
         "network",
-        //"custom/external-network",
         "custom/storage",
         "memory",
         "cpu",
-        //"battery",
+        "battery",
         //"pulseaudio",
         "temperature",
         "wireplumber",
@@ -61,11 +60,10 @@
 
 
     "custom/rofi": {
-        //"format": "",
-        "format": "",
+        "format": "",
         "tooltip": false,
         "on-click-right": "nwg-drawer",
-        "on-click": "wofi --show drun",
+        "on-click": "wofi --show run",
         "on-click-middle": "pkill -9 wofi"
     },
     "custom/screenshot_t":{
@@ -97,7 +95,7 @@
         "critical-threshold": 80,
         // "format-critical": "{temperatureC}°C",
         "format-critical": "  {temperatureC}°C",
-        "format": " {temperatureC}°C",
+        "format": "{temperatureC}°C",
         "format-icons": ["", "", ""],
         "max-length": 7,
         "min-length": 7,
@@ -106,7 +104,7 @@
 
     "memory": {
         "interval": 30,
-        "format": "  {used:0.2f} / {total:0.0f} GB",
+        "format": "{used:0.2f} / {total:0.0f} GB",
         "on-click": "kitty -e htop"
     },
 
@@ -131,27 +129,19 @@
     "network": {
         "format-wifi": " {essid} ({signalStrength}%)",
         //"format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
-        //"format-ethernet": "{ipaddr}/{cidr}",
-        "format-ethernet": "{bandwidthUpBytes}   | {bandwidthDownBytes} ",
+        "format-ethernet": "{ipaddr}/{cidr}",
         "format-linked": "{ifname} (No IP) ",
         "format": "",
         "format-disconnected": "",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}",
-        //"on-click": "wl-copy $(ip address show up scope global | grep inet | head -n1 | cut -d/ -f 1 | tr -d [:space:] | cut -c5-)",
-        //"on-click-right": "wl-copy $(ip address show up scope global | grep inet6 | head -n1 | cut -d/ -f 1 | tr -d [:space:] | cut -c6-)",
-        "on-click-right": "wl-copy $(curl -s ifconfig.me)",
-        //"tooltip-format": " {bandwidthUpBits}  {bandwidthDownBits}\n{ifname}\n{ipaddr}/{cidr}\n",
-        //"tooltip-format-wifi": " {essid} {frequency}MHz\nStrength: {signaldBm}dBm ({signalStrength}%)\nIP: {ipaddr}/{cidr}\n {bandwidthUpBits}  {bandwidthDownBits}",
+        //"format-alt": "{ifname}: {ipaddr}/{cidr}",
+        "on-click": "wl-copy $(ip address show up scope global | grep inet | head -n1 | cut -d/ -f 1 | tr -d [:space:] | cut -c5-)",
+        "on-click-right": "wl-copy $(ip address show up scope global | grep inet6 | head -n1 | cut -d/ -f 1 | tr -d [:space:] | cut -c6-)",
+        "tooltip-format": " {bandwidthUpBits}  {bandwidthDownBits}\n{ifname}\n{ipaddr}/{cidr}\n",
+        "tooltip-format-wifi": " {essid} {frequency}MHz\nStrength: {signaldBm}dBm ({signalStrength}%)\nIP: {ipaddr}/{cidr}\n {bandwidthUpBits}  {bandwidthDownBits}",
         "interval": 1
     },
-    "custom/external-network":{
-    "format": "{}",
-    "exec": "curl -s https://ifconfig.me",
-    "interval": 15,
-    "tooltip": false,
-    },
     "custom/storage": {
-        "format": "  {} | {percentage}%",
+        "format": "{} | {percentage}%",
         //"format-alt": "{percentage}% ",
         //"format-alt-click": "click-right",
         "return-type": "json",
@@ -181,8 +171,7 @@
         "format": "{text}",
         //"format-alt": "{alt}: {text}",
         //"format-alt-click": "click-right",
-        //"interval": 3600,
-        "interval": 900,
+        "interval": 3600,
         "exec": "curl -s 'https://wttr.in/Ribeirao_Preto?format=1'",
         //"return-type": "json",
         //"exec": "~/.config/waybar/modules/weather.sh",
@@ -222,8 +211,7 @@
     },
 
     "custom/power": {
-        //"format": " 󰐥 ", 
-          "format": "  ", 
+        "format": "", 
         "tooltip": false,
         "on-click": "wlogout"
     },
@@ -265,7 +253,7 @@
     "cpu": {
         "interval": 1,
         //"format": " {}%", // Icon: microchip
-        "format": "  {max_frequency}GHz <span>| {usage}%</span>",
+        "format": "{max_frequency}GHz <span color=\"darkgray\">| {usage}%</span>",
         "max-length": 13,
         "min-length": 13
     },
