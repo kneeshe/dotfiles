@@ -253,7 +253,7 @@
     "cpu": {
         "interval": 1,
         //"format": " {}%", // Icon: microchip
-        "format": "{max_frequency}GHz <span color=\"darkgray\">| {usage}%</span>",
+        "format": "{max_frequency}GHz <span>| {usage}%</span>",
         "max-length": 13,
         "min-length": 13
     },
