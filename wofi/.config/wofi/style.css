@@ -1,0 +1,16 @@
+@import "/home/cris/.config/wofi/mocha.css";
+
+* {
+  color: @text;
+}
+
+window {
+  /* background-color: @red; */
+}
+
+input {
+  background-color: @peach;
+  border-color: @red;
+  color: @red;
+}
+
