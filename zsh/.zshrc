@@ -115,12 +115,22 @@ alias fzf="fzf --preview='bat --color=always {}'"
 alias init_vm="vboxmanage startvm ubuntu_plex --type headless"
 alias conn_vm="ssh cristian@192.168.3.63"
 
-#alias para a vpn
-alias vpn-cvx='openvpn3 session-start --config "cvx"'
-alias vpn-qti='openvpn3 session-start --config "qti"'
-alias vpn-reweb='openvpn3 session-start --config "reweb"'
-alias vpn-stop='openvpn3 session-manage --disconnect --config'
-alias vpn-status='openvpn3 sessions-list'
+# --- Aliases OpenVPN 3 ---
+
+# Inicia a VPN (ex: vpn-up cvx)
+alias vpn-cvx='sudo systemctl start openvpn3-session@cvx.service'
+alias vpn-qti='sudo systemctl start openvpn3-session@qti.service'
+alias vpn-reweb='sudo systemctl start openvpn3-session@reweb.service'
+
+# Para a VPN (ex: vpn-down cvx)
+alias vpn-down-cvx='sudo systemctl stop openvpn3-session@cvx.service'
+alias vpn-down-qti='sudo systemctl stop openvpn3-session@qti.service'
+alias vpn-down-reweb='sudo systemctl stop openvpn3-session@reweb.service'
+
+# Status da VPN (ex: vpn-status cvx)
+alias vpn-status-cvx='systemctl status openvpn3-session@cvx.service'
+alias vpn-status-qti='systemctl status openvpn3-session@qti.service'
+alias vpn-status-reweb='systemctl status openvpn3-session@reweb.service'
 
 EDITOR='nvim'
 
