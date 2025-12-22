@@ -67,4 +67,4 @@ vim.opt.softtabstop = 2
 vim.opt.cursorline = true
 
 -- Theme Catppuccin
-vim.cmd.colorscheme "catppuccin"
+-- vim.cmd.colorscheme "catppuccin"

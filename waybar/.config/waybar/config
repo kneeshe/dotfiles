@@ -19,13 +19,11 @@
 
     "modules-left": [
         //"custom/rofi",
-        "hyprland/workspaces"
-        //"hyprland/submap"
-    ],
-    "modules-center": [
-        //"hyprland/window"
         "clock#date",
         "custom/weather"
+    ],
+    "modules-center": [
+        "hyprland/workspaces"
     ],
     "modules-right": [
         "custom/network",
