@@ -1,5 +1,5 @@
-require('config.lazy')
-require('config.options')
-require('config.keymaps')
-require('config.diagnostics')
-require('plugins.options.completions')
+require('config.lazy') -- plugin manager
+require('config.options') -- options for the editor
+require('config.keymaps') -- keymaps shortcuts
+require('config.lsp') -- lsp config
+-- require('config.diagnostics')

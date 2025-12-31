@@ -1,9 +1,8 @@
--- Unnamed repository; edit this file 'description' to name the repository.
 -- Enable clipboard between Vim/Neovim and other applications
 vim.opt.clipboard = 'unnamedplus'
 
 -- Modify the auto-complete menu to behave more like an IDE
-vim.opt.completeopt = {'noinsert', 'menuone', 'noselect'}
+-- vim.opt.completeopt = {'noinsert', 'menuone', 'noselect'}
 
 -- Hide unused buffers
 vim.opt.hidden = true
@@ -55,16 +54,8 @@ vim.opt.tabstop = 2
 -- Keep indentation consistent when using automatic indentation
 vim.opt.softtabstop = 2
 
--- This should make your Vim / Neovim background transparent
--- vim.cmd [[
---   highlight Normal guibg=none
---   highlight NonText guibg=none
---   highlight Normal ctermbg=none
---   highlight NonText ctermbg=none
--- ]]
-
 -- Enable highlight on the actual line
 vim.opt.cursorline = true
 
--- Theme Catppuccin
--- vim.cmd.colorscheme "catppuccin"
+-- Round borders on windows
+vim.opt.winborder = 'rounded'
