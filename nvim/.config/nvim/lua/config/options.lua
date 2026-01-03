@@ -58,4 +58,4 @@ vim.opt.softtabstop = 2
 vim.opt.cursorline = true
 
 -- Round borders on windows
-vim.opt.winborder = 'rounded'
+vim.opt.winborder = 'none'
