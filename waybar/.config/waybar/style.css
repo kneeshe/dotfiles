@@ -77,7 +77,8 @@
 }
 
 #workspaces button:hover {
-    color: mix(@yellow, @text, 0.5);
+    color: @red;
+    background-color: transparent;
 }
 
 #workspaces button.urgent {
@@ -89,17 +90,6 @@
     /* background-color: @mantle; */
     /* padding: 1px 2px; */
 }
-
-/* #window { */
-/*     background-color: @mantle; */
-/*     font-size: 15px;    */
-/*     font-weight: 800; */
-/*     color: @foreground; */
-/*     border-radius: 14px; */
-/*     padding: 3px 6px;  */
-/*     margin: 2px; */
-/*     opacity: 1; */
-/* } */
 
 #clock,
 #cpu,
