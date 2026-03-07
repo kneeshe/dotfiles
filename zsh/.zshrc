@@ -105,6 +105,7 @@ source $ZSH/oh-my-zsh.sh
 alias ll="ls -laht --color=auto"
 alias nv="nvim"
 alias nf='nvim $(fzf --preview="bat --color=always {}")'
+alias tm='tmux'
 alias desligar="shutdown now"
 alias suspender="systemctl suspend"
 alias kitimg="kitten icat"
