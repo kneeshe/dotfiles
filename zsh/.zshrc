@@ -110,11 +110,7 @@ alias desligar="shutdown now"
 alias suspender="systemctl suspend"
 alias kitimg="kitten icat"
 alias fzf="fzf --preview='bat --color=always {}'"
-# alias ssh="kitten ssh"
-
-#alias temporario para a vm do plex
-alias init_vm="vboxmanage startvm ubuntu_plex --type headless"
-alias conn_vm="ssh cristian@192.168.3.63"
+alias mail="aerc"
 
 # --- Aliases OpenVPN 3 ---
 
@@ -159,3 +155,12 @@ setopt hist_find_no_dups
 source <(fzf --zsh)
 
 # eval "$(starship init zsh)"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH="$HOME/.local/bin:$PATH"

@@ -5,6 +5,7 @@ vim.lsp.enable({
   'nixd',
   'pyright',
   'rust-analyzer',
+  'ts_ls',
 })
 
 vim.diagnostic.config( { virtual_lines = { current_line = true, }, } )

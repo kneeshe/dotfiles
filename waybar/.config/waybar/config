@@ -4,6 +4,7 @@
     // -------------------------------------------------------------------------
 
     "layer": "bottom",
+    "output": ["HDMI-A-1", "HDMI"],
     "mode": "dock",
     "position": "top",
     "exclusive": "true",
