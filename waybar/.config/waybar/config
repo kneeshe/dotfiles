@@ -147,12 +147,12 @@
         "format-source-muted": "",
         //"format-muted": "<span foreground='#fab387'> </span>",
         //"format-icons": [ "<span foreground='#fab387'></span>" ]
-        "format-icons": {
-            "headphone": " ",
-            "hands-free": " ",
-            "headset": " ",
-            "default": ["", " ", " "]
-        },
+        // "format-icons": {
+            // "headphone": " ",
+            // "hands-free": " ",
+            // "headset": " ",
+            // "default": ["", " ", " "]
+        // },
     },
 
   "custom/network": {
