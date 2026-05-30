@@ -18,7 +18,8 @@
         "custom/weather"
     ],
     "modules-center": [
-        "hyprland/workspaces"
+        // "hyprland/workspaces"
+        "niri/workspaces"
     ],
     "modules-right": [
         "custom/network",
@@ -96,7 +97,8 @@
         "tooltip": false
     },
 
-    "hyprland/workspaces": {
+    // "hyprland/workspaces": {
+    "niri/workspaces": {
         "format": "{icon}",
         "format-icons": {
             "1": "1",
