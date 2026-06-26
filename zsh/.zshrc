@@ -1,6 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
+ZSH_DISABLE_COMPFIX="true"
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -111,6 +112,8 @@ alias suspender="systemctl suspend"
 alias kitimg="kitten icat"
 alias fzf="fzf --preview='bat --color=always {}'"
 alias mail="aerc"
+alias yt="mpv --ytdl-format='bestvideo[height<=1080]+bestaudio/best'"
+alias emacs="emacs -nw"
 
 # --- Aliases OpenVPN 3 ---
 
@@ -154,13 +157,10 @@ setopt hist_find_no_dups
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
-# eval "$(starship init zsh)"
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-export ANDROID_HOME=$HOME/Android/Sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH="$HOME/.local/bin:$PATH"
+
+export GUIX_LOCPATH="$HOME/.guix-profile/lib/locale"

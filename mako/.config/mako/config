@@ -1,0 +1,10 @@
+layer=overlay
+background-color=#3c3836
+border-size=1
+border-color=#fe8019
+border-radius=6
+icons=1
+default-timeout=3000
+ignore-timeout=1
+font=JetBrains Mono 11
+
