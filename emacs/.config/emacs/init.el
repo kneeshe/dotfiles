@@ -1,35 +1,8 @@
 ;; importa os modulos
-(load-file "~/.config/emacs/packs.el")
+(load-file "~/.config/emacs/lisp/pacotes.el")
+(load-file "~/.config/emacs/lisp/interface.el")
 
-;; Tira tela de iníciop
-(setq inhibit-startup-message t)
-
-;; Desabilita o gerenciador de pacotes padrão
-(setq package-enable-at-startup nil)
-
-;; Tira barra de menu/toolbar/scrollbar
-(menu-bar-mode -1)
-(tool-bar-mode -1)
-(scroll-bar-mode -1)
-
-;; Número das linhas
-(global-display-line-numbers-mode 1)
-
-;; tab-line
-(global-tab-line-mode 1)
-
-;; Espaços em vez de TAB
-(setq-default indent-tabs-mode nil)
-(setq-default tab-width 4)
-
-;; Atira o which key e o hl das linhas
-(which-key-mode 1)
-(global-hl-line-mode 1)
-
-;; Habilita o repo Melpa
-(require 'package)
-(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
-;;(package-initialize)
+;; Criado pelo Emacs - NÃO MEXER
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
