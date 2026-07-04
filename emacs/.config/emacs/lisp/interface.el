@@ -9,8 +9,10 @@
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 
-;; Numero de linhas
+;; Numero de linhas e colunas no line-mode
 (global-display-line-numbers-mode 1)
+(column-number-mode 1)
+(setq column-number-indicator-zero-based nil)
 
 ;; Tabline
 (global-tab-line-mode)
@@ -28,9 +30,11 @@
 ;; Lista os buffers no topo
 (global-tab-line-mode 1)
 
-
 ;; Configura as frajas
 (fringe-mode 5)
 
+;; Mostra o relogio
+(display-time-mode t)
+(setq display-time-24hr-format t)
 
 (provide 'interface)

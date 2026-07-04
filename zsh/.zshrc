@@ -113,7 +113,7 @@ alias kitimg="kitten icat"
 alias fzf="fzf --preview='bat --color=always {}'"
 alias mail="aerc"
 alias yt="mpv --ytdl-format='bestvideo[height<=1080]+bestaudio/best'"
-alias emacs="emacs -nw"
+alias emacs="emacsclient -nw"
 
 # --- Aliases OpenVPN 3 ---
 

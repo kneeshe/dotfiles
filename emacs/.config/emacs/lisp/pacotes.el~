@@ -1,9 +1,0 @@
-;; Desabilita o gerenciador de pacotes padrão
-(setq package-enable-at-startup nil)
-
-;; Habilita o repo Melpa
-(require 'package)
-(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
-(package-initialize)
-
-(provide 'pacotes)

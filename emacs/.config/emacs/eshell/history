@@ -1,0 +1,10 @@
+ls
+cd Downloads/
+ls
+nv
+nvim
+ls
+emacs
+htop
+ls
+exit

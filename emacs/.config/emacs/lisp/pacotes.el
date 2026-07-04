@@ -19,5 +19,7 @@
 ;; Marginalia - anotações extras no menu
 (use-package marginalia :ensure t :config (marginalia-mode))
 
+;; Corfu - autocomplete
+(use-package corfu :ensure t :init (global-corfu-mode))
 
 (provide 'pacotes)

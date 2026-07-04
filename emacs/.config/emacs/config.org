@@ -1,0 +1,19 @@
+#+Title: Kneemacs - Kneeshe's Own Emacs
+#+Author: Cris "Kneeshe" Sousa - <cr.sousa616@gmail.com>
+
+* Não sei o que estou fazendo, mas irei fazer
+
+** Importação de modulos:
+#+BEGIN_SRC elisp :tangle ""
+(load-file "~/.config/emacs/lisp/pacotes.el")
+(load-file "~/.config/emacs/lisp/interface.el")
+(load-file "~/.config/emacs/lisp/gnus.el")
+#+END_SRC
+
+** Configuração da interface:
+#+BEGIN_SRC elisp :tangle ""
+#+END_SRC
+
+** Configuração dos pacotes:
+#+BEGIN_SRC elisp :tangle ""
+#+END_SRC
