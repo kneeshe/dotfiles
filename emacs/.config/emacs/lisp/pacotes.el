@@ -9,9 +9,9 @@
 ;; Lista de pacotes
 
 ;; Gruvbox-theme
-(use-package gruvbox-theme :ensure t)
+;;(use-package gruvbox-theme :ensure t)
 ;; Carrega o tema
-(load-theme 'gruvbox-dark-soft t)
+;;(load-theme 'gruvbox-dark-soft t)
 
 ;; Vertico - Minibuffer vertical
 (use-package vertico :ensure t :init (vertico-mode))
@@ -21,5 +21,20 @@
 
 ;; Corfu - autocomplete
 (use-package corfu :ensure t :init (global-corfu-mode))
+
+;; Doom-themes - temas
+(use-package doom-themes
+  :ensure t
+  :custom
+  ;; Global settings (defaults)
+  (doom-themes-enable-bold t)   ; if nil, bold is universally disabled
+  (doom-themes-enable-italic t) ; if nil, italics is universally disabled
+  :config
+  (load-theme 'doom-gruvbox t)
+
+  ;; Enable flashing mode-line on errors
+  (doom-themes-visual-bell-config)
+  ;; Corrects (and improves) org-mode's native fontification.
+  (doom-themes-org-config))
 
 (provide 'pacotes)
