@@ -8,16 +8,19 @@
 
 ;; Lista de pacotes
 
-;; Gruvbox-theme
-;;(use-package gruvbox-theme :ensure t)
-;; Carrega o tema
-;;(load-theme 'gruvbox-dark-soft t)
-
 ;; Vertico - Minibuffer vertical
 (use-package vertico :ensure t :init (vertico-mode))
 
 ;; Marginalia - anotações extras no menu
 (use-package marginalia :ensure t :config (marginalia-mode))
+
+;; Orderless - pesquisa fuzzy
+(use-package orderless
+  :ensure t
+  :custom
+  (completion-styles '(orderless basic))
+  (completion-category-overrides '((file (styles partial-completion))))
+  (completion-pcm-leading-wildcard t)) ;; Emacs 31: partial-completion behaves like substring
 
 ;; Corfu - autocomplete
 (use-package corfu :ensure t :init (global-corfu-mode))
