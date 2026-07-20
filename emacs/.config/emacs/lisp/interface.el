@@ -20,6 +20,7 @@
 ;; Espaços em vez de TAB
 (setq-default indent-tabs-mode nil)
 (setq-default tab-indent 4)
+(setq tab-always-indent 'complete)
 
 ;; Which-key
 (which-key-mode 1)
