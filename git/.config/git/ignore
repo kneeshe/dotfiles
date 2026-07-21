@@ -1,0 +1,5 @@
+# Não aguento mais os arquivos do Emacs!
+# Vamos ignora-los
+
+auto-save-list
+eln-cache

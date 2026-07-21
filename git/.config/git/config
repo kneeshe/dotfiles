@@ -1,0 +1,9 @@
+[user]
+  name = Cristian "Kneeshe" Sousa
+  email = cr.sousa616@gmail.com
+
+[core]
+  excludesFile = ~/.config/git/ignore
+
+[init]
+  defaultBranch = main
