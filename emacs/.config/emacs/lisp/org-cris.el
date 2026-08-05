@@ -8,4 +8,4 @@
 ;; define o diretorio padrão da agenda
 (setq org-agenda-files '("~/Documentos/org/"))
 
-(provide 'org)
+(provide 'org-cris)
