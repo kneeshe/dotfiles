@@ -170,4 +170,6 @@ sidebar-mode: true;
   }
 }
 
-@theme "/usr/share/rofi/themes/gruvbox-dark.rasi"
+//@theme "/usr/share/rofi/themes/gruvbox-dark.rasi"
+
+@theme "/usr/share/rofi/themes/gruvbox-dark-soft.rasi"

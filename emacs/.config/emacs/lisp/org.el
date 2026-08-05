@@ -3,9 +3,9 @@
 ;; e a agenda
 
 ;; define o diretorio padrão dos arquivos
-(setq org-directory "~/Documentos/Org/")
+(setq org-directory "~/Documentos/org/")
 
 ;; define o diretorio padrão da agenda
-(setq org-agenda-files '("~/Documentos/Org/"))
+(setq org-agenda-files '("~/Documentos/org/"))
 
-(provide 'org-cris)
+(provide 'org)

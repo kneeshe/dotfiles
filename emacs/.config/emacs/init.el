@@ -1,7 +1,7 @@
 ;; importa os modulos
 (load-file "~/.config/emacs/lisp/pacotes.el")
 (load-file "~/.config/emacs/lisp/interface.el")
-(load-file "~/.config/emacs/lisp/org-cris.el")
+(load-file "~/.config/emacs/lisp/org.el")
 
 ;; Desliga o backup (file~) e o autosave (#file#)
 (setq make-backup-files nil)
