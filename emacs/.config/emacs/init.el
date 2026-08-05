@@ -16,7 +16,6 @@
  '(custom-safe-themes
    '("2ff9ac386eac4dffd77a33e93b0c8236bb376c5a5df62e36d4bfa821d56e4e20"
      default))
- '(org-agenda-files nil)
  '(package-selected-packages
    '(corfu corfu-terminal doom-themes marginalia orderless vertico)))
 (custom-set-faces
