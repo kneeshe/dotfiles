@@ -8,4 +8,6 @@
 ;; define o diretorio padrão da agenda
 (setq org-agenda-files '("~/Documentos/org/"))
 
+(setq org-default-notes-file (concat org-directory "/notas.org"))
+
 (provide 'org-cris)

@@ -7,6 +7,10 @@
 (setq make-backup-files nil)
 (setq auto-save-default nil)
 
+;; Atalhos para ativar o org-agenda e o org-capture
+(global-set-key (kbd "C-c a") #'org-agenda)
+(global-set-key (kbd "C-c c") #'org-capture)
+
 ;; Criado pelo Emacs - NÃO MEXER
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
