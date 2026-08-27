@@ -1,3 +1,5 @@
+;;; -*- lexical-binding: t; -*-
+
 ;; Desabilita o gerenciador de pacotes padrão
 (setq package-enable-at-startup nil)
 
@@ -24,9 +26,6 @@
 
 ;; Corfu - autocomplete
 (use-package corfu :ensure t :custom (corfu-cycle t) :init (global-corfu-mode) :config (setq corfu-auto t))
-
-;; Corfu-terminal - autocomplete no terminal
-(use-package corfu-terminal :ensure t :after corfu :if (not (display-graphic-p)) :config (corfu-terminal-mode +1))
 
 ;; Doom-themes - temas
 (use-package doom-themes

@@ -1,3 +1,5 @@
+;;; -*- lexical-binding: t; -*-
+
 ;; Config básica para definir os locais
 ;; onde o org-mode vai procurar os arquivos
 ;; e a agenda

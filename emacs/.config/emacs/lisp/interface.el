@@ -1,3 +1,5 @@
+;;; -*- lexical-binding: t; -*-
+
 ;; Remove tela de inicio
 (setq inhibit-startup-message t)
 
