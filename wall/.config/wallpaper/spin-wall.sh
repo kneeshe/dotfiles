@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
- wall=/home/cris/Imagens/wallpaper/images/
+wall=/home/cris/.config/wallpaper/images/
 
 while [ 1 ]; do
   for i in $wall*; do
