@@ -110,6 +110,7 @@ alias desligar="shutdown now"
 alias suspender="systemctl suspend"
 alias kitimg="kitten icat"
 alias emacs="emacsclient -nw"
+alias tidal="cliamp --provider tidal"
 
 EDITOR='nvim'
 

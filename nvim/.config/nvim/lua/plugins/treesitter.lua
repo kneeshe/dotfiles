@@ -2,7 +2,7 @@ return {
   'nvim-treesitter/nvim-treesitter',
   build = ":TSUpdate",
   config = function()
-    local config = require("nvim-treesitter.configs")
+    local config = require("nvim-treesitter")
     config.setup({
       ensure_instaled = {"c", "lua", "vim", "rust", "haskell", "markdown", "java"},
       highlight = {enable = true},
