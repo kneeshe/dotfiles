@@ -287,4 +287,4 @@ bindsym $mod+Print exec grim -g "$(slurp)" ~/Pictures/$(date +%Y-%m-%d_%H-%m-%s)
 # Selecionar uma área com o mouse e copiar DIRETO para o Clipboard (sem salvar arquivo)
 bindsym $mod+Shift+Print exec grim -g "$(slurp)" - | wl-copy --type image/png
 
-include /usr/local/etc/sway/config.d/*
+include /etc/sway/config.d/*

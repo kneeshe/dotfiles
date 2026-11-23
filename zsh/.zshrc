@@ -111,7 +111,7 @@ alias suspender="systemctl suspend"
 alias kitimg="kitten icat"
 alias emacs="emacsclient -nw"
 alias tidal="cliamp --provider tidal"
-
+alias vi="vim"
 EDITOR='nvim'
 
 #Bindkeys (modes emacs, vi insert, vi command)
